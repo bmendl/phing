@@ -339,7 +339,7 @@ class SonarTask extends Task
         if (($this->configuration === null) || ($this->configuration === '')) {
             // NOTE: Ignore an empty configuration. This allows for
             // using Phing properties as attribute values, e.g.
-            // <sonar ... configuration="{sonar.config.file}">.
+            // <sonar ... configuration="${sonar.config.file}">.
             return;
         }
 
